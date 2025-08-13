@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Page – LMS</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #2980b9;
+      --text-color: #555;
+      --footer-bg: #ecf0f1;
+      --font-family: 'Segoe UI', Roboto, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      display: flex;
+      flex-direction: column;
+      background-color: var(--primary-color);
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+      color: var(--text-color);
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1f6391;
+    }
+
+    footer {
+      background-color: var(--footer-bg);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-color);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to Learner Management System</h1>
+    <p>
+      This web application lets you create, read, update, and delete learner records
+      from the database—right from a single, full-screen interface.
+    </p>
+    <a class="btn" href="menu.jsp">Go to Menu</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Liberty Engetelo Chauke. Developed in May 2025.
+  </footer>
+
+</body>
+</html>
